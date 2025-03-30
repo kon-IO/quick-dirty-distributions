@@ -23,7 +23,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Γρήγορες & Βρώμικες",
+  title: "Γρήγορα να τελειώνουμε",
   meta: [
     {
       name: "description",
