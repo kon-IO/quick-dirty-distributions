@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { DocumentHead } from "@builder.io/qwik-city";
 import Equation from "~/components/article/equation";
 import BinomialGraph from "~/components/images/binomial-graph";
 
@@ -15,3 +16,13 @@ export default component$(() => {
     </>
   );
 });
+
+export const head: DocumentHead = {
+  title: "Γρήγορα να τελειώνουμε - Διωνυμική",
+  meta: [
+    {
+      name: "description",
+      content: "Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών",
+    },
+  ],
+};
