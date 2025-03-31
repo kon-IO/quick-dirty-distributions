@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://kon-io.github.io/",
+        origin: "https://kon-io.github.io/quick-dirty-distributions/",
       }),
     ],
   };
