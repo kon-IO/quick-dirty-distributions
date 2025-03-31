@@ -1,5 +1,5 @@
 {
-  "manifestHash": "kwzl1n",
+  "manifestHash": "3th3i8",
   "symbols": {
     "s_pdhm0G4aOvU": {
       "origin": "../node_modules/@builder.io/qwik-city/lib/index.qwik.mjs",
@@ -68,7 +68,7 @@
       "parent": null,
       "loc": [
         310,
-        943
+        946
       ]
     },
     "s_AJBdv4ZRYJM": {
@@ -441,7 +441,7 @@
     "s_nMxMm50nP4o": "q-BwA7bDKG.js",
     "s_06Hg5FudZf0": "q-C7z3JFER.js",
     "s_1HUcVRMRTf0": "q-Cr5xunWA.js",
-    "s_8Sx8b57eFv0": "q-BeV4UBll.js",
+    "s_8Sx8b57eFv0": "q-CF70Bo3U.js",
     "s_AJBdv4ZRYJM": "q-BxVQAfWG.js",
     "s_Pg6M3BwCRX0": "q-XyulMorK.js",
     "s_SJclcjIQ8ds": "q-DELNP5WS.js",
@@ -487,20 +487,6 @@
       ],
       "symbols": [
         "s_vnYWD8ogqw8"
-      ]
-    },
-    "q-3J645Mlc.js": {
-      "size": 171,
-      "imports": [
-        "q-Bgd8Z7DK.js",
-        "q-ZVWWrhjk.js"
-      ],
-      "dynamicImports": [
-        "q-BeV4UBll.js"
-      ],
-      "origins": [
-        "src/global.css",
-        "src/root.tsx"
       ]
     },
     "q-5iq8-Z6D.js": {
@@ -574,21 +560,18 @@
         "src/routes/binomial/index.tsx"
       ]
     },
-    "q-BeV4UBll.js": {
-      "size": 514,
+    "q-BFO4w9rI.js": {
+      "size": 171,
       "imports": [
         "q-Bgd8Z7DK.js",
         "q-ZVWWrhjk.js"
       ],
       "dynamicImports": [
-        "q-C7z3JFER.js"
+        "q-CF70Bo3U.js"
       ],
       "origins": [
-        "src/components/router-head/router-head.tsx",
-        "src/root.tsx_root_component_8Sx8b57eFv0.js"
-      ],
-      "symbols": [
-        "s_8Sx8b57eFv0"
+        "src/global.css",
+        "src/root.tsx"
       ]
     },
     "q-Bgd8Z7DK.js": {
@@ -725,6 +708,23 @@
       ],
       "symbols": [
         "s_rNr5py8zhKg"
+      ]
+    },
+    "q-CF70Bo3U.js": {
+      "size": 517,
+      "imports": [
+        "q-Bgd8Z7DK.js",
+        "q-ZVWWrhjk.js"
+      ],
+      "dynamicImports": [
+        "q-C7z3JFER.js"
+      ],
+      "origins": [
+        "src/components/router-head/router-head.tsx",
+        "src/root.tsx_root_component_8Sx8b57eFv0.js"
+      ],
+      "symbols": [
+        "s_8Sx8b57eFv0"
       ]
     },
     "q-CgrLhnUB.js": {
