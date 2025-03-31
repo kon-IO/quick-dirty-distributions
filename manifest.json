@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "quick-dirty-distributions",
+  "short_name": "Ιδιότητες & Συναρτήσεις κατανομών",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Γρήγορη εύρεση ιδιοτήτων & συναρτήσεων κατανομών"
+}

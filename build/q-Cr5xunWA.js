@@ -1,0 +1,1 @@
+import{_ as s,j as n,l as t,S as u}from"./q-ZVWWrhjk.js";const c=a=>s("div",null,{class:"mx-2 mt-3 mb-3.5"},[s("h3",null,{class:"text-lg"},n(l=>l.title,[a]),3,null),s("div",null,{class:n(l=>l.class,[a])},t(u,null,3,"aO_0"),1,null)],1,"aO_1");export{c as s_1HUcVRMRTf0};
