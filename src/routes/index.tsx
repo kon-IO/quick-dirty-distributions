@@ -10,10 +10,10 @@ export default component$(() => {
       <h1 class="mt-1.5 text-center text-4xl">Κατανομές</h1>
       <div class="mt-5 flex justify-center">
         <main class="grid grid-cols-2 gap-5">
-          <ArticleCard title="Διωνυμική" href="/binomial">
+          <ArticleCard title="Διωνυμική" href="/quick-dirty-distributions/binomial">
             <BinomialGraph />
           </ArticleCard>
-          <ArticleCard title="Κανονική" href="/normal">
+          <ArticleCard title="Κανονική" href="/quick-dirty-distributions/normal">
             <NormalGraph />
           </ArticleCard>
         </main>
