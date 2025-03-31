@@ -1,10 +1,4 @@
-import {
-  Fragment,
-  Slot,
-  component$,
-  useComputed$,
-  useSignal,
-} from "@builder.io/qwik";
+import { component$, useComputed$, useSignal } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import Article from "~/components/article/article";
 import Equation from "~/components/article/equation";
@@ -54,7 +48,7 @@ export default component$(() => {
         </Equation>
         <hr />
         <div class="mx-2 mt-3 flex flex-col gap-3">
-          <h3 class="text-lg">Εύρεση Z</h3>
+          <h3 class="text-lg">Εύρεση Z (τυπική)</h3>
           <div class="flex flex-row justify-center gap-3">
             <input
               type="text"
