@@ -1,0 +1,1 @@
+import{_ as e}from"./q-CfhNldG0.js";import{c as o,q as r}from"./q-ZVWWrhjk.js";const a=o(r(()=>e(()=>import("./q-Cf2Tcqsc.js").then(t=>t.i),[]),"s_AJBdv4ZRYJM")),_={title:"Κατανομές - Διωνυμική",meta:[{name:"description",content:"Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών"}]};export{a as default,_ as head};
