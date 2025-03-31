@@ -1,1 +1,0 @@
-import{_ as e,l as n,S as t,j as s}from"./q-ZVWWrhjk.js";const o=r=>e("a",null,{href:s(l=>l.href,[r])},e("article",null,{class:"flex flex-col items-center gap-1 border-2 border-black rounded-sm p-2"},[n(t,null,3,"eb_0"),e("h2",null,{class:"text-2xl"},s(l=>l.title,[r]),3,null)],1,null),1,"eb_1");export{o as s_rNr5py8zhKg};
