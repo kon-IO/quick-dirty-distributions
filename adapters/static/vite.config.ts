@@ -4,6 +4,7 @@ import baseConfig from "../../vite.config";
 
 export default extendConfig(baseConfig, () => {
   return {
+    base: "/quick-dirty-distributions/",
     build: {
       ssr: true,
       rollupOptions: {
@@ -12,7 +13,8 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://kon-io.github.io/quick-dirty-distributions/",
+        origin: "https://kon-io.github.io/",
+        base: "/quick-dirty-distributions/"
       }),
     ],
   };
