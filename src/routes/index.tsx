@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import ArticleCard from "~/components/article-card/article-card";
 import BinomialGraph from "~/components/images/binomial-graph";
+import GeometricGraph from "~/components/images/geometric-graph";
 import NormalGraph from "~/components/images/normal-graph";
 
 export default component$(() => {
@@ -29,6 +30,16 @@ export default component$(() => {
             }
           >
             <NormalGraph />
+          </ArticleCard>
+          <ArticleCard
+            title="Γεωμετρική"
+            href={
+              import.meta.env.DEV
+                ? "/geometric"
+                : "/quick-dirty-distributions/geometric"
+            }
+          >
+            <GeometricGraph />
           </ArticleCard>
         </main>
       </div>
