@@ -1,23 +1,21 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import Article from "~/components/article/article";
 import Equation from "~/components/article/equation";
 import BinomialGraph from "~/components/images/binomial-graph";
 
 export default component$(() => {
   return (
-    <>
-      <h1 class="mt-2 mb-3.5 text-center text-3xl">Διωνυμική</h1>
-      <div class="flex flex-col items-center">
-        <div class="flex justify-center">
-          <BinomialGraph large />
-        </div>
-        <main class="m-3 w-5/6">
-          <Equation title="ΣΜΠ" class="text-2xl">
-            {"$$ \\binom nk p^k q^{n - k} $$"}
-          </Equation>
-        </main>
+    <Article title="Διωνυμική">
+      <div q:slot="graph">
+        <BinomialGraph large />
       </div>
-    </>
+      <div q:slot="main">
+        <Equation title="ΣΜΠ" class="text-2xl">
+          {"$$ \\binom nk p^k q^{n - k} $$"}
+        </Equation>
+      </div>
+    </Article>
   );
 });
 

@@ -1,5 +1,12 @@
-import { component$, useComputed$, useSignal } from "@builder.io/qwik";
+import {
+  Fragment,
+  Slot,
+  component$,
+  useComputed$,
+  useSignal,
+} from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import Article from "~/components/article/article";
 import Equation from "~/components/article/equation";
 import NormalGraph from "~/components/images/normal-graph";
 
@@ -35,51 +42,48 @@ export default component$(() => {
   });
 
   return (
-    <>
-      <h1 class="mt-2 mb-3.5 text-center text-3xl">Κανονική</h1>
-      <div class="flex w-full flex-col items-center">
-        <div class="flex justify-center">
-          <NormalGraph large />
-        </div>
-        <main class="m-3 w-5/6">
-          <Equation title="ΣΠΠ" class="text-2xl">
-            {
-              "$$ \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x - \\mu)^2}{2\\sigma^2}} $$"
-            }
-          </Equation>
-          <hr />
-          <div class="mx-2 mt-3 flex flex-col gap-3">
-            <h3 class="text-lg">Εύρεση Z</h3>
-            <div class="flex flex-row justify-center gap-3">
-              <input
-                type="text"
-                class="w-32 border-1 border-black"
-                bind:value={zSt}
-              />
-              <p class="w-20">Z = {out.value}</p>
-            </div>
+    <Article title="Κανονική">
+      <div q:slot="graph">
+        <NormalGraph large />
+      </div>
+      <div q:slot="main">
+        <Equation title="ΣΠΠ" class="text-2xl">
+          {
+            "$$ \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x - \\mu)^2}{2\\sigma^2}} $$"
+          }
+        </Equation>
+        <hr />
+        <div class="mx-2 mt-3 flex flex-col gap-3">
+          <h3 class="text-lg">Εύρεση Z</h3>
+          <div class="flex flex-row justify-center gap-3">
+            <input
+              type="text"
+              class="w-32 border-1 border-black"
+              bind:value={zSt}
+            />
+            <p class="w-20">Z = {out.value}</p>
           </div>
-          <p class="mt-3.5 ml-1.5 text-xs text-gray-700">
-            (Πολύ ωραίος ο κώδικας που πήρα για αυτό, pay respects:{" "}
-            <a
-              class="text-blue-500"
-              target="_blank"
-              href="https://stackoverflow.com/a/36577594"
-            >
-              https://stackoverflow.com/a/36577594
-            </a>
-            )
-          </p>
-          {/*
+        </div>
+        <p class="mt-3.5 ml-1.5 text-xs text-gray-700">
+          (Πολύ ωραίος ο κώδικας που πήρα για αυτό, pay respects:{" "}
+          <a
+            class="text-blue-500"
+            target="_blank"
+            href="https://stackoverflow.com/a/36577594"
+          >
+            https://stackoverflow.com/a/36577594
+          </a>
+          )
+        </p>
+        {/*
           <Equation title="Αθροιστική" class="text-base">
             {
               "$$ \\Phi\\left(\\frac{x - \\mu}{\\sigma}\\right) = \\frac{1}{2}\\left[1 + \\text{erf}\\left(\\frac{x - \\mu}{\\sigma\\sqrt{2}}\\right)\\right] $$"
             }
           </Equation>
           */}
-        </main>
       </div>
-    </>
+    </Article>
   );
 });
 
