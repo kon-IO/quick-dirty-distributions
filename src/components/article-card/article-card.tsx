@@ -8,7 +8,7 @@ export default component$<{
     <a href={props.href}>
       <article class="flex flex-col items-center gap-1 border-2 border-black rounded-sm p-2">
         <Slot />
-        <h2>{props.title}</h2>
+        <h2 class="text-2xl">{props.title}</h2>
       </article>
     </a>
   );

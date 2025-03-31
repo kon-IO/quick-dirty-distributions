@@ -6,19 +6,23 @@ import BinomialGraph from "~/components/images/binomial-graph";
 export default component$(() => {
   return (
     <>
-      <h1 class="mt-1.5 mb-4 text-center text-3xl">Διωνυμική</h1>
-      <div class="flex justify-center">
-        <BinomialGraph large />
+      <h1 class="mt-2 mb-3.5 text-center text-3xl">Διωνυμική</h1>
+      <div class="flex flex-col items-center">
+        <div class="flex justify-center">
+          <BinomialGraph large />
+        </div>
+        <main class="m-3 w-5/6">
+          <Equation title="ΣΜΠ" class="text-2xl">
+            {"$$ \\binom nk p^k q^{n - k} $$"}
+          </Equation>
+        </main>
       </div>
-      <main class="m-3 text-xl">
-        <Equation title="ΣΜΠ">{"$$ \\binom nk p^k q^{n - k} $$"}</Equation>
-      </main>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Γρήγορα να τελειώνουμε - Διωνυμική",
+  title: "Κατανομές - Διωνυμική",
   meta: [
     {
       name: "description",

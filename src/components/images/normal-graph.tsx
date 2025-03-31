@@ -1,10 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 
-export default component$(() => {
+export default component$<{ large?: boolean }>((props) => {
+  const large = props.large ?? false;
   return (
     <svg
       version="1.1"
-      class="h-16 w-16 fill-current"
+      class={large ? "h-36 w-36 fill-current" : "h-16 w-16 fill-current"}
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 320 320"
