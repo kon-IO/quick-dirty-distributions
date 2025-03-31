@@ -4,8 +4,8 @@ import baseConfig from "../../vite.config";
 
 export default extendConfig(baseConfig, () => {
   return {
-    base: "/quick-dirty-distributions/",
     build: {
+      emptyOutDir: true,
       ssr: true,
       rollupOptions: {
         input: ["@qwik-city-plan"],
@@ -14,7 +14,7 @@ export default extendConfig(baseConfig, () => {
     plugins: [
       staticAdapter({
         origin: "https://kon-io.github.io/",
-        base: "/quick-dirty-distributions/"
+        // base: "/quick-dirty-distributions/"
       }),
     ],
   };
