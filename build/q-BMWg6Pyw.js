@@ -1,0 +1,1 @@
+import{_ as e}from"./q-BA_s3eAv.js";import{c as o,q as n}from"./q-ZVWWrhjk.js";const a=o(n(()=>e(()=>import("./q-C_nbKLxm.js").then(t=>t.i),[]),"s_4d0znAhIsRE")),s={title:"Κατανομές - Γεωμετρική",meta:[{name:"description",content:"Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών"}]};export{a as default,s as head};
