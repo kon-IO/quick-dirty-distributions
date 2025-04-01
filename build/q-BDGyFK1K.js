@@ -1,0 +1,1 @@
+import{_ as e}from"./q-CcXQaPBg.js";import{c as o,q as r}from"./q-ZVWWrhjk.js";const a=o(r(()=>e(()=>import("./q-DvntqToS.js").then(t=>t.i),[]),"s_wbQX7wbHsgw")),s={title:"Κατανομές",meta:[{name:"description",content:"Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών"}]};export{a as default,s as head};
