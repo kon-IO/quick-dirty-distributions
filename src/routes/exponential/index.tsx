@@ -30,7 +30,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Κατανομές - Διωνυμική",
+  title: "Κατανομές - Εκθετική",
   meta: [
     {
       name: "description",
