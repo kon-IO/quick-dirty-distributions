@@ -9,8 +9,8 @@
   "icons": [
     {
       "src": "/quick-dirty-distributions/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "sizes": "any"
     },
     {
       "src": "/quick-dirty-distributions/micon.ico",
