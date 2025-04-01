@@ -5,7 +5,7 @@ import GeometricGraph from "~/components/images/geometric-graph";
 
 export default component$(() => {
   return (
-    <Article title="Geometric">
+    <Article title="Γεωμετρική">
       <div q:slot="graph">
         <GeometricGraph large />
       </div>
