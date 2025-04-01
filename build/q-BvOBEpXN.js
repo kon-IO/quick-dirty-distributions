@@ -1,1 +1,0 @@
-import{_ as e}from"./q-Ct-eihlq.js";import{c as o,q as r}from"./q-ZVWWrhjk.js";const a=o(r(()=>e(()=>import("./q-CkHT-f8_.js").then(t=>t.i),[]),"s_dUL5teGNAIY")),_={title:"Κατανομές - Εκθετική",meta:[{name:"description",content:"Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών"}]};export{a as default,_ as head};

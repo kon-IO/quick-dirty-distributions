@@ -5,5 +5,16 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Γρήγορη εύρεση ιδιοτήτων & συναρτήσεων κατανομών"
+  "description": "Γρήγορη εύρεση ιδιοτήτων & συναρτήσεων κατανομών",
+  "icons": [
+    {
+      "src": "/quick-dirty-distributions/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/quick-dirty-distributions/micon.ico",
+      "sizes": "128x128 96x96 64x64 48x48 32x32 16x16"
+    }
+  ]
 }
