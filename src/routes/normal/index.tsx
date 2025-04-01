@@ -3,6 +3,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 import Article from "~/components/article/article";
 import Equation from "~/components/article/equation";
 import NormalGraph from "~/components/images/normal-graph";
+import { rootHead } from "~/lib/root-head";
 
 /* The G.O.A.T. https://stackoverflow.com/a/36577594 */
 function percentile_z(p: number): number {
@@ -89,11 +90,13 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Κατανομές - Κανονική",
+  title: `${rootHead.title} - Κανονική`,
   meta: [
+    ...rootHead.meta,
+    { property: "og:title", content: `${rootHead.title} - Κανονική` },
     {
-      name: "description",
-      content: "Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών",
+      property: "og:url",
+      content: "https://kon-io.github.io/quick-dirty-distributions/normal",
     },
   ],
 };

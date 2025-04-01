@@ -6,6 +6,7 @@ import ExponentialGraph from "~/components/images/exponential-graph";
 import GeometricGraph from "~/components/images/geometric-graph";
 import NormalGraph from "~/components/images/normal-graph";
 import PoissonGraph from "~/components/images/poisson-graph";
+import { rootHead } from "~/lib/root-head";
 
 export default component$(() => {
   return (
@@ -70,11 +71,13 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Κατανομές",
+  ...rootHead,
   meta: [
+    ...rootHead.meta,
+    { property: "og:title", content: rootHead.title },
     {
-      name: "description",
-      content: "Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών",
+      property: "og:url",
+      content: "https://kon-io.github.io/quick-dirty-distributions/",
     },
   ],
 };

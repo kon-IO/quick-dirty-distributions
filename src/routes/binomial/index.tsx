@@ -3,6 +3,7 @@ import { DocumentHead } from "@builder.io/qwik-city";
 import Article from "~/components/article/article";
 import Equation from "~/components/article/equation";
 import BinomialGraph from "~/components/images/binomial-graph";
+import { rootHead } from "~/lib/root-head";
 
 export default component$(() => {
   return (
@@ -27,11 +28,13 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Κατανομές - Διωνυμική",
+  title: `${rootHead.title} - Διωνυμική`,
   meta: [
+    ...rootHead.meta,
+    { property: "og:title", content: `${rootHead.title} - Διωνυμική` },
     {
-      name: "description",
-      content: "Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών",
+      property: "og:url",
+      content: "https://kon-io.github.io/quick-dirty-distributions/binomial",
     },
   ],
 };
