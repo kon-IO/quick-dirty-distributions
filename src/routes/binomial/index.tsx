@@ -11,6 +11,13 @@ export default component$(() => {
         <BinomialGraph large />
       </div>
       <div q:slot="main">
+        <Equation title="Ιδιότητες" class="text-lg">
+          <div class="mt-3 flex flex-col items-center gap-2">
+            {"\\(E(X) = np\\)"}
+            <br />
+            {"\\(V(X) = np(1 - p)\\)"}
+          </div>
+        </Equation>
         <Equation title="ΣΜΠ" class="text-2xl">
           {"$$ \\binom nk p^k q^{n - k} $$"}
         </Equation>

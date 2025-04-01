@@ -41,6 +41,13 @@ export default component$(() => {
         <NormalGraph large />
       </div>
       <div q:slot="main">
+        <Equation title="Ιδιότητες" class="text-lg">
+          <div class="mt-3 flex flex-col items-center gap-2">
+            {"\\(E(X) = \\mu\\)"}
+            <br />
+            {"\\(V(X) = \\sigma^2\\)"}
+          </div>
+        </Equation>
         <Equation title="ΣΠΠ" class="text-2xl">
           {
             "$$ \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x - \\mu)^2}{2\\sigma^2}} $$"
