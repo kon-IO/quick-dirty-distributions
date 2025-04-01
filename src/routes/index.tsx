@@ -2,8 +2,10 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import ArticleCard from "~/components/article-card/article-card";
 import BinomialGraph from "~/components/images/binomial-graph";
+import ExponentialGraph from "~/components/images/exponential-graph";
 import GeometricGraph from "~/components/images/geometric-graph";
 import NormalGraph from "~/components/images/normal-graph";
+import PoissonGraph from "~/components/images/poisson-graph";
 
 export default component$(() => {
   return (
@@ -40,6 +42,26 @@ export default component$(() => {
             }
           >
             <GeometricGraph />
+          </ArticleCard>
+          <ArticleCard
+            title="Poisson"
+            href={
+              import.meta.env.DEV
+                ? "/poisson"
+                : "/quick-dirty-distributions/poisson"
+            }
+          >
+            <PoissonGraph />
+          </ArticleCard>
+          <ArticleCard
+            title="Εκθετική"
+            href={
+              import.meta.env.DEV
+                ? "/exponential"
+                : "/quick-dirty-distributions/exponential"
+            }
+          >
+            <ExponentialGraph />
           </ArticleCard>
         </main>
       </div>
