@@ -1,0 +1,1 @@
+import{_ as o}from"./q-Ct-eihlq.js";import{c as t,q as e}from"./q-ZVWWrhjk.js";const i=t(e(()=>o(()=>import("./q-D7x9N9kh.js"),[]),"s_qoZDuoOq1Js")),n={title:"Κατανομές - Poisson",meta:[{name:"description",content:"Προβολή ιδιοτήτων & συναρτήσεων κοινών κατανομών"}]};export{i as default,n as head};
